@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input data"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여러줄"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여러줄"
+        android:inputType="textMultiLine"
+        android:maxLines="3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:cursorVisible="false"/>
+    <!--ems는 글자수만큼의 뷰넓이 지정-->
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/ic_fab_24"/>
+    <!--editText에 배결을주면 밑줄이 사라짐-->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:padding="8dp"
+        android:hint="입력"
+        android:background="@drawable/et_background"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/et01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:background="@drawable/et_background"
+        android:inputType="phone"
+        android:maxLines="3"/>
+    <EditText
+        android:id="@+id/et02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:background="@drawable/et_background"
+        android:inputType="phone"
+        android:maxLines="3"/>
+    <EditText
+        android:id="@+id/et03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:gravity="center"
+        android:background="@drawable/et_background"
+        android:inputType="phone"
+        android:maxLines="4"/>
+</LinearLayout>
+</LinearLayout>
